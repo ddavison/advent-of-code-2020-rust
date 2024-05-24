@@ -9,3 +9,6 @@ build:
 
 day_1: build
     hyperfine --warmup {{WARMUP}} -- '{{BINARY_PATH}} day_1'
+
+day_2: build
+    hyperfine --warmup {{WARMUP}} -- '{{BINARY_PATH}} day_2'
