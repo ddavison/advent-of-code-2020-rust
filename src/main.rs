@@ -27,7 +27,10 @@ where I: AsRef<Path> {
 fn main() {
     if let Some(day) = env::args().nth(2) {
         match day.as_str() {
-            "day_1" => { day_1::day_1(Part::One, "src/day_1/data/input.txt"); },
+            "day_1" => {
+                day_1::day_1(Part::One, "src/day_1/data/input.txt");
+                day_1::day_1(Part::Two, "src/day_1/data/input.txt");
+            },
             "day_2" => { day_2::day_2("src/day_2/data/input.txt"); },
             "day_3" => { day_1::day_1(Part::One, "src/day_1/data/input.txt"); },
             "day_4" => { day_1::day_1(Part::One, "src/day_1/data/input.txt"); },
